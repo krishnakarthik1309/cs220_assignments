@@ -1,15 +1,46 @@
 # Data Declarations
 
 .data
-
-x:	.word	-2
-y:	.word	-4
+	
+	prompt1: .asciiz "Enter value of x: "
+	prompt2: .asciiz "Enter value of y:"
+	x:	.word	0
+	y:	.word	0
 
 # Main
 
 .text
 
+
 main:
+
+# --------------------
+	#prompt the user to enter x 
+	li $v0, 4
+	la $a0, prompt1
+	syscall
+
+	#get x from user
+	li $v0, 5
+	syscall
+
+	#store x in $to
+	move $t0, $v0
+	sw $t0, x
+
+	#prompt the user to enter y
+	li $v0, 4
+	la $a0, prompt2
+	syscall
+
+	#get y from user
+	li $v0, 5
+	syscall
+
+	#store y in $to
+	move $t0, $v0
+	sw $t0, y
+#-------------------------------------
 
 	# pass arguments to func
 	lw $a0, x
