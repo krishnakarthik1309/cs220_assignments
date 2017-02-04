@@ -1,6 +1,6 @@
 .data
 prompt: .asciiz "Enter an integer: "
-result: .asciiz "\n The number in binary format is: "
+result: .asciiz "\nThe number in binary format is: "
 
 .text
 # assumption 32 bit
@@ -16,6 +16,11 @@ syscall
 li $v0, 5
 syscall	# result is in v0
 move $t0, $v0
+
+# print "The number in binary format is: "
+la $a0, result
+li $v0, 4
+syscall
 
 # Print the binary number
 # First rotate the bits left by one bit and
