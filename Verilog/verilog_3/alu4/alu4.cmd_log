@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 
+xst -intstyle ise -ifn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.xst" -ofn "C:/Users/karthik/Desktop/cs220/group1_ass3/alu4/alu4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc alu4.ucf -p xc3s500e-fg320-4 alu4.ngc alu4.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o alu4_map.ncd alu4.ngd alu4.pcf 
+par -w -intstyle ise -ol high -t 1 alu4_map.ncd alu4.ncd alu4.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml alu4.twx alu4.ncd -o alu4.twr alu4.pcf -ucf alu4.ucf 
+bitgen -intstyle ise -f alu4.ut alu4.ncd 

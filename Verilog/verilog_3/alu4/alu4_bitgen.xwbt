@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\karthik\Desktop\cs220\group1_ass3\alu4\alu4.ncd
+OUTFILE=C:\Users\karthik\Desktop\cs220\group1_ass3\alu4\alu4.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=C:\Users\karthik\Desktop\cs220\group1_ass3\alu4
+LICENSE=WebPack
+USER_INFO=211329818_0_0_076

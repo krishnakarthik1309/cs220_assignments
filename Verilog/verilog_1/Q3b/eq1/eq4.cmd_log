@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.xst" -ofn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -p xc3s500e-fg320-4 eq4.ngc eq4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -uc eq4.ucf -p xc3s500e-fg320-4 eq4.ngc eq4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -uc eq4.ucf -p xc3s500e-fg320-4 eq4.ngc eq4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -uc eq4.ucf -p xc3s500e-fg320-4 eq4.ngc eq4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq2.ucf -p xc3s500e-fg320-4 eq4.ngc eq4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc eq4.ucf -p xc3s500e-fg320-4 eq4.ngc eq4.ngd  
+xst -intstyle ise -ifn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.xst" -ofn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.syr" 
+xst -intstyle ise -ifn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.xst" -ofn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.syr" 
+xst -intstyle ise -ifn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.xst" -ofn "/tmp/guest-cZFNDU/Desktop/eq1/eq4.syr" 

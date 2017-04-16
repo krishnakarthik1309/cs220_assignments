@@ -1,0 +1,798 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml adder.twx adder.ncd -o adder.twr adder.pcf -ucf add4.ucf
+
+Design file:              adder.ncd
+Physical constraint file: adder.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 329 paths analyzed, 64 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.318ns.
+--------------------------------------------------------------------------------
+
+Paths for end point count_23 (SLICE_X55Y43.CIN), 22 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     15.682ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_0 (FF)
+  Destination:          count_23 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.318ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_0 to count_23
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y32.XQ      Tcko                  0.591   count<0>
+                                                       count_0
+    SLICE_X55Y32.F3      net (fanout=1)        0.383   count<0>
+    SLICE_X55Y32.COUT    Topcyf                1.162   count<0>
+                                                       Mcount_count_lut<0>_INV_0
+                                                       Mcount_count_cy<0>
+                                                       Mcount_count_cy<1>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   Mcount_count_cy<1>
+    SLICE_X55Y33.COUT    Tbyp                  0.118   count<2>
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.COUT    Tbyp                  0.118   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_cy<19>
+    SLICE_X55Y42.CIN     net (fanout=1)        0.000   Mcount_count_cy<19>
+    SLICE_X55Y42.COUT    Tbyp                  0.118   count<20>
+                                                       Mcount_count_cy<20>
+                                                       Mcount_count_cy<21>
+    SLICE_X55Y43.CIN     net (fanout=1)        0.000   Mcount_count_cy<21>
+    SLICE_X55Y43.CLK     Tcinck                1.002   count<22>
+                                                       Mcount_count_cy<22>
+                                                       Mcount_count_xor<23>
+                                                       count_23
+    -------------------------------------------------  ---------------------------
+    Total                                      4.318ns (3.935ns logic, 0.383ns route)
+                                                       (91.1% logic, 8.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.686ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_2 (FF)
+  Destination:          count_23 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.314ns (Levels of Logic = 11)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_2 to count_23
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y33.XQ      Tcko                  0.591   count<2>
+                                                       count_2
+    SLICE_X55Y33.F1      net (fanout=1)        0.497   count<2>
+    SLICE_X55Y33.COUT    Topcyf                1.162   count<2>
+                                                       count<2>_rt
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.COUT    Tbyp                  0.118   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_cy<19>
+    SLICE_X55Y42.CIN     net (fanout=1)        0.000   Mcount_count_cy<19>
+    SLICE_X55Y42.COUT    Tbyp                  0.118   count<20>
+                                                       Mcount_count_cy<20>
+                                                       Mcount_count_cy<21>
+    SLICE_X55Y43.CIN     net (fanout=1)        0.000   Mcount_count_cy<21>
+    SLICE_X55Y43.CLK     Tcinck                1.002   count<22>
+                                                       Mcount_count_cy<22>
+                                                       Mcount_count_xor<23>
+                                                       count_23
+    -------------------------------------------------  ---------------------------
+    Total                                      4.314ns (3.817ns logic, 0.497ns route)
+                                                       (88.5% logic, 11.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.798ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_1 (FF)
+  Destination:          count_23 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.202ns (Levels of Logic = 12)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_1 to count_23
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y32.YQ      Tcko                  0.587   count<0>
+                                                       count_1
+    SLICE_X55Y32.G2      net (fanout=1)        0.432   count<1>
+    SLICE_X55Y32.COUT    Topcyg                1.001   count<0>
+                                                       count<1>_rt
+                                                       Mcount_count_cy<1>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   Mcount_count_cy<1>
+    SLICE_X55Y33.COUT    Tbyp                  0.118   count<2>
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.COUT    Tbyp                  0.118   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_cy<19>
+    SLICE_X55Y42.CIN     net (fanout=1)        0.000   Mcount_count_cy<19>
+    SLICE_X55Y42.COUT    Tbyp                  0.118   count<20>
+                                                       Mcount_count_cy<20>
+                                                       Mcount_count_cy<21>
+    SLICE_X55Y43.CIN     net (fanout=1)        0.000   Mcount_count_cy<21>
+    SLICE_X55Y43.CLK     Tcinck                1.002   count<22>
+                                                       Mcount_count_cy<22>
+                                                       Mcount_count_xor<23>
+                                                       count_23
+    -------------------------------------------------  ---------------------------
+    Total                                      4.202ns (3.770ns logic, 0.432ns route)
+                                                       (89.7% logic, 10.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point count_21 (SLICE_X55Y42.CIN), 20 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     15.800ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_0 (FF)
+  Destination:          count_21 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.200ns (Levels of Logic = 11)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_0 to count_21
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y32.XQ      Tcko                  0.591   count<0>
+                                                       count_0
+    SLICE_X55Y32.F3      net (fanout=1)        0.383   count<0>
+    SLICE_X55Y32.COUT    Topcyf                1.162   count<0>
+                                                       Mcount_count_lut<0>_INV_0
+                                                       Mcount_count_cy<0>
+                                                       Mcount_count_cy<1>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   Mcount_count_cy<1>
+    SLICE_X55Y33.COUT    Tbyp                  0.118   count<2>
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.COUT    Tbyp                  0.118   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_cy<19>
+    SLICE_X55Y42.CIN     net (fanout=1)        0.000   Mcount_count_cy<19>
+    SLICE_X55Y42.CLK     Tcinck                1.002   count<20>
+                                                       Mcount_count_cy<20>
+                                                       Mcount_count_xor<21>
+                                                       count_21
+    -------------------------------------------------  ---------------------------
+    Total                                      4.200ns (3.817ns logic, 0.383ns route)
+                                                       (90.9% logic, 9.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.804ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_2 (FF)
+  Destination:          count_21 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.196ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_2 to count_21
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y33.XQ      Tcko                  0.591   count<2>
+                                                       count_2
+    SLICE_X55Y33.F1      net (fanout=1)        0.497   count<2>
+    SLICE_X55Y33.COUT    Topcyf                1.162   count<2>
+                                                       count<2>_rt
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.COUT    Tbyp                  0.118   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_cy<19>
+    SLICE_X55Y42.CIN     net (fanout=1)        0.000   Mcount_count_cy<19>
+    SLICE_X55Y42.CLK     Tcinck                1.002   count<20>
+                                                       Mcount_count_cy<20>
+                                                       Mcount_count_xor<21>
+                                                       count_21
+    -------------------------------------------------  ---------------------------
+    Total                                      4.196ns (3.699ns logic, 0.497ns route)
+                                                       (88.2% logic, 11.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.916ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_1 (FF)
+  Destination:          count_21 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.084ns (Levels of Logic = 11)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_1 to count_21
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y32.YQ      Tcko                  0.587   count<0>
+                                                       count_1
+    SLICE_X55Y32.G2      net (fanout=1)        0.432   count<1>
+    SLICE_X55Y32.COUT    Topcyg                1.001   count<0>
+                                                       count<1>_rt
+                                                       Mcount_count_cy<1>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   Mcount_count_cy<1>
+    SLICE_X55Y33.COUT    Tbyp                  0.118   count<2>
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.COUT    Tbyp                  0.118   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_cy<19>
+    SLICE_X55Y42.CIN     net (fanout=1)        0.000   Mcount_count_cy<19>
+    SLICE_X55Y42.CLK     Tcinck                1.002   count<20>
+                                                       Mcount_count_cy<20>
+                                                       Mcount_count_xor<21>
+                                                       count_21
+    -------------------------------------------------  ---------------------------
+    Total                                      4.084ns (3.652ns logic, 0.432ns route)
+                                                       (89.4% logic, 10.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point count_19 (SLICE_X55Y41.CIN), 18 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     15.918ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_0 (FF)
+  Destination:          count_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.082ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_0 to count_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y32.XQ      Tcko                  0.591   count<0>
+                                                       count_0
+    SLICE_X55Y32.F3      net (fanout=1)        0.383   count<0>
+    SLICE_X55Y32.COUT    Topcyf                1.162   count<0>
+                                                       Mcount_count_lut<0>_INV_0
+                                                       Mcount_count_cy<0>
+                                                       Mcount_count_cy<1>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   Mcount_count_cy<1>
+    SLICE_X55Y33.COUT    Tbyp                  0.118   count<2>
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.CLK     Tcinck                1.002   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_xor<19>
+                                                       count_19
+    -------------------------------------------------  ---------------------------
+    Total                                      4.082ns (3.699ns logic, 0.383ns route)
+                                                       (90.6% logic, 9.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     15.922ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_2 (FF)
+  Destination:          count_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      4.078ns (Levels of Logic = 9)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_2 to count_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y33.XQ      Tcko                  0.591   count<2>
+                                                       count_2
+    SLICE_X55Y33.F1      net (fanout=1)        0.497   count<2>
+    SLICE_X55Y33.COUT    Topcyf                1.162   count<2>
+                                                       count<2>_rt
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.CLK     Tcinck                1.002   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_xor<19>
+                                                       count_19
+    -------------------------------------------------  ---------------------------
+    Total                                      4.078ns (3.581ns logic, 0.497ns route)
+                                                       (87.8% logic, 12.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     16.034ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_1 (FF)
+  Destination:          count_19 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      3.966ns (Levels of Logic = 10)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_1 to count_19
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X55Y32.YQ      Tcko                  0.587   count<0>
+                                                       count_1
+    SLICE_X55Y32.G2      net (fanout=1)        0.432   count<1>
+    SLICE_X55Y32.COUT    Topcyg                1.001   count<0>
+                                                       count<1>_rt
+                                                       Mcount_count_cy<1>
+    SLICE_X55Y33.CIN     net (fanout=1)        0.000   Mcount_count_cy<1>
+    SLICE_X55Y33.COUT    Tbyp                  0.118   count<2>
+                                                       Mcount_count_cy<2>
+                                                       Mcount_count_cy<3>
+    SLICE_X55Y34.CIN     net (fanout=1)        0.000   Mcount_count_cy<3>
+    SLICE_X55Y34.COUT    Tbyp                  0.118   count<4>
+                                                       Mcount_count_cy<4>
+                                                       Mcount_count_cy<5>
+    SLICE_X55Y35.CIN     net (fanout=1)        0.000   Mcount_count_cy<5>
+    SLICE_X55Y35.COUT    Tbyp                  0.118   count<6>
+                                                       Mcount_count_cy<6>
+                                                       Mcount_count_cy<7>
+    SLICE_X55Y36.CIN     net (fanout=1)        0.000   Mcount_count_cy<7>
+    SLICE_X55Y36.COUT    Tbyp                  0.118   count<8>
+                                                       Mcount_count_cy<8>
+                                                       Mcount_count_cy<9>
+    SLICE_X55Y37.CIN     net (fanout=1)        0.000   Mcount_count_cy<9>
+    SLICE_X55Y37.COUT    Tbyp                  0.118   count<10>
+                                                       Mcount_count_cy<10>
+                                                       Mcount_count_cy<11>
+    SLICE_X55Y38.CIN     net (fanout=1)        0.000   Mcount_count_cy<11>
+    SLICE_X55Y38.COUT    Tbyp                  0.118   count<12>
+                                                       Mcount_count_cy<12>
+                                                       Mcount_count_cy<13>
+    SLICE_X55Y39.CIN     net (fanout=1)        0.000   Mcount_count_cy<13>
+    SLICE_X55Y39.COUT    Tbyp                  0.118   count<14>
+                                                       Mcount_count_cy<14>
+                                                       Mcount_count_cy<15>
+    SLICE_X55Y40.CIN     net (fanout=1)        0.000   Mcount_count_cy<15>
+    SLICE_X55Y40.COUT    Tbyp                  0.118   count<16>
+                                                       Mcount_count_cy<16>
+                                                       Mcount_count_cy<17>
+    SLICE_X55Y41.CIN     net (fanout=1)        0.000   Mcount_count_cy<17>
+    SLICE_X55Y41.CLK     Tcinck                1.002   count<18>
+                                                       Mcount_count_cy<18>
+                                                       Mcount_count_xor<19>
+                                                       count_19
+    -------------------------------------------------  ---------------------------
+    Total                                      3.966ns (3.534ns logic, 0.432ns route)
+                                                       (89.1% logic, 10.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point n2_0 (SLICE_X51Y39.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.275ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               n2_0 (FF)
+  Destination:          n2_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.275ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: n2_0 to n2_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X51Y39.YQ      Tcko                  0.470   n2<0>
+                                                       n2_0
+    SLICE_X51Y39.G4      net (fanout=1)        0.289   n2<0>
+    SLICE_X51Y39.CLK     Tckg        (-Th)    -0.516   n2<0>
+                                                       _old_n2_2<0>1
+                                                       n2_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.275ns (0.986ns logic, 0.289ns route)
+                                                       (77.3% logic, 22.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point n2_3 (SLICE_X53Y38.G4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.275ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               n2_3 (FF)
+  Destination:          n2_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.275ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: n2_3 to n2_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y38.YQ      Tcko                  0.470   n2<3>
+                                                       n2_3
+    SLICE_X53Y38.G4      net (fanout=1)        0.289   n2<3>
+    SLICE_X53Y38.CLK     Tckg        (-Th)    -0.516   n2<3>
+                                                       _old_n2_2<3>1
+                                                       n2_3
+    -------------------------------------------------  ---------------------------
+    Total                                      1.275ns (0.986ns logic, 0.289ns route)
+                                                       (77.3% logic, 22.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point n2_1 (SLICE_X53Y32.G1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.412ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               n2_1 (FF)
+  Destination:          n2_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.412ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: n2_1 to n2_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X53Y32.YQ      Tcko                  0.470   n2<1>
+                                                       n2_1
+    SLICE_X53Y32.G1      net (fanout=1)        0.426   n2<1>
+    SLICE_X53Y32.CLK     Tckg        (-Th)    -0.516   n2<1>
+                                                       _old_n2_2<1>1
+                                                       n2_1
+    -------------------------------------------------  ---------------------------
+    Total                                      1.412ns (0.986ns logic, 0.426ns route)
+                                                       (69.8% logic, 30.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.348ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 0.826ns (Tcl)
+  Physical resource: n2<2>/CLK
+  Logical resource: n2_2/CK
+  Location pin: SLICE_X52Y38.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.348ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.826ns (Tch)
+  Physical resource: n2<2>/CLK
+  Logical resource: n2_2/CK
+  Location pin: SLICE_X52Y38.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.348ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.652ns (605.327MHz) (Tcp)
+  Physical resource: n2<2>/CLK
+  Logical resource: n2_2/CK
+  Location pin: SLICE_X52Y38.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.318|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 329 paths, 0 nets, and 59 connections
+
+Design statistics:
+   Minimum period:   4.318ns{1}   (Maximum frequency: 231.589MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Mar 31 19:05:35 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 179 MB
+
+
+

@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Apr 12 10:45:12 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "Wenable" LOCATE = SITE "V16" LEVEL 1;
+COMP "setWR" LOCATE = SITE "K17" LEVEL 1;
+COMP "setWData" LOCATE = SITE "H13" LEVEL 1;
+COMP "p<0>" LOCATE = SITE "L13" LEVEL 1;
+COMP "OutR1<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "p<1>" LOCATE = SITE "L14" LEVEL 1;
+COMP "OutR1<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "p<2>" LOCATE = SITE "H18" LEVEL 1;
+COMP "OutR1<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "p<3>" LOCATE = SITE "N17" LEVEL 1;
+COMP "OutR1<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "OutR2<0>" LOCATE = SITE "C11" LEVEL 1;
+COMP "OutR2<1>" LOCATE = SITE "D11" LEVEL 1;
+COMP "OutR2<2>" LOCATE = SITE "E9" LEVEL 1;
+COMP "OutR2<3>" LOCATE = SITE "F9" LEVEL 1;
+COMP "setRR1" LOCATE = SITE "V4" LEVEL 1;
+COMP "setRR2" LOCATE = SITE "D18" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+SCHEMATIC END;
+

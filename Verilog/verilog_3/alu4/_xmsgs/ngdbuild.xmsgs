@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;b&quot; LOC = R16&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;a&quot; LOC = R15&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;c&quot; LOC = P17&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;d&quot; LOC = M15&gt;&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;clk&quot; PERIOD = 20.0ns HIGH 50%;&gt; [alu4.ucf(2)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;b&quot; LOC = R16&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">b</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;b&quot;  LOC = &quot;R16&quot; |&gt; [alu4.ucf(27)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;a&quot; LOC = R15&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">a</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;a&quot;  LOC = &quot;R15&quot; |&gt; [alu4.ucf(26)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;c&quot; LOC = P17&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">c</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;c&quot;  LOC = &quot;P17&quot; |&gt; [alu4.ucf(28)]</arg>.
+</msg>
+
+<msg type="warning" file="NgdBuild" num="1012" delta="old" >The constraint <arg fmt="%s" index="1">&lt;NET &quot;d&quot; LOC = M15&gt;</arg> is overridden on the design object <arg fmt="%s" index="2">d</arg> by the constraint <arg fmt="%s" index="3">&lt;NET &quot;d&quot;  LOC = &quot;M15&quot; |&gt; [alu4.ucf(29)]</arg>.
+</msg>
+
+</messages>
+
